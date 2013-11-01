@@ -53,7 +53,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)../../;$(ProjectDir)../../loom/vendor/seatest/src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../;$(ProjectDir)../../loom/vendor/seatest/src;$(ProjectDir)../../loom/vendor/zlib-1.2.8</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -98,6 +98,13 @@
     <ClCompile Include="platform\platformThread.c" />
     <ClCompile Include="platform\platformThreadTests.cpp" />
     <ClCompile Include="platform\platformTime.c" />
+    <ClCompile Include="utils\utBase64.cpp" />
+    <ClCompile Include="utils\utByteArray.cpp" />
+    <ClCompile Include="utils\utRandom.cpp" />
+    <ClCompile Include="utils\utSHA2.cpp" />
+    <ClCompile Include="utils\utStreams.cpp" />
+    <ClCompile Include="utils\utString.cpp" />
+    <ClCompile Include="xml\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\allocator.h" />
@@ -118,6 +125,20 @@
     <ClInclude Include="platform\platformNetwork.h" />
     <ClInclude Include="platform\platformThread.h" />
     <ClInclude Include="platform\platformTime.h" />
+    <ClInclude Include="utils\fourcc.h" />
+    <ClInclude Include="utils\utAssert.h" />
+    <ClInclude Include="utils\utBase64.h" />
+    <ClInclude Include="utils\utByteArray.h" />
+    <ClInclude Include="utils\utCommon.h" />
+    <ClInclude Include="utils\utEndian.h" />
+    <ClInclude Include="utils\utMemoryPool.h" />
+    <ClInclude Include="utils\utRandom.h" />
+    <ClInclude Include="utils\utSHA2.h" />
+    <ClInclude Include="utils\utSingleton.h" />
+    <ClInclude Include="utils\utStreams.h" />
+    <ClInclude Include="utils\utString.h" />
+    <ClInclude Include="utils\utTypes.h" />
+    <ClInclude Include="xml\tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="platform\platformFileIOS.m" />

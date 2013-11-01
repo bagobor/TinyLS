@@ -18,7 +18,7 @@
  * ===========================================================================
  */
 
-#include "zlib.h"
+#include <zlib.h>
 
 #include "utByteArray.h"
 #include "utStreams.h"

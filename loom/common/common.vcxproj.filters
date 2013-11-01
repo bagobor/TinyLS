@@ -10,6 +10,12 @@
     <Filter Include="platform">
       <UniqueIdentifier>{272ad0c6-e2ac-42fd-bc2e-55c3376c84dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{f4686bdd-fa44-4798-b870-d65adae855bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{f75bf35f-18ff-4414-86b7-e99f1274147a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core\allocator.c">
@@ -69,6 +75,27 @@
     <ClCompile Include="platform\platformTime.c">
       <Filter>platform</Filter>
     </ClCompile>
+    <ClCompile Include="utils\utBase64.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utByteArray.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utRandom.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utSHA2.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utStreams.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utString.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxml2.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\allocator.h">
@@ -124,6 +151,48 @@
     </ClInclude>
     <ClInclude Include="platform\platformTime.h">
       <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\fourcc.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utAssert.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utBase64.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utByteArray.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utCommon.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utEndian.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utMemoryPool.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utRandom.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utSHA2.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utSingleton.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utStreams.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utString.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utTypes.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinyxml2.h">
+      <Filter>xml</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
