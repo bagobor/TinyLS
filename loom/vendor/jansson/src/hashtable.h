@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009-2011 Petri Lehtinen <petri@digip.org>
+ * Copyright (c) 2009-2013 Petri Lehtinen <petri@digip.org>
  *
  * This library is free software; you can redistribute it and/or modify
  * it under the terms of the MIT license. See LICENSE for details.
@@ -7,10 +7,6 @@
 
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
-
-typedef size_t (*key_hash_fn)(const void *key);
-typedef int (*key_cmp_fn)(const void *key1, const void *key2);
-typedef void (*free_fn)(void *key);
 
 struct hashtable_list {
     struct hashtable_list *prev;

@@ -21,7 +21,7 @@
 
 #include "loom/common/core/allocator.h"
 #include "loom/common/core/allocatorJEMalloc.h"
-#include "seatest.h"
+#include "loom/seatest.hpp"
 
 SEATEST_FIXTURE(allocatorSystem)
 {

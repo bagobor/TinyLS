@@ -18,7 +18,7 @@
  * ===========================================================================
  */
 
-#include "seatest.h"
+#include "loom/seatest.hpp"
 #include "loom/common/platform/platformNetwork.h"
 #include "loom/common/platform/platformThread.h"
 

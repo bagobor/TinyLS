@@ -19,7 +19,7 @@
  */
 
 #include "loom/common/core/log.h"
-#include "seatest.h"
+#include "loom/seatest.hpp"
 
 SEATEST_FIXTURE(logging)
 {

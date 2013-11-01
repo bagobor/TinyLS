@@ -5,6 +5,11 @@
 #include "jansson_private.h"
 #include "strbuffer.h"
 
+/* need config.h to get the correct snprintf */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #if JSON_HAVE_LOCALECONV
 #include <locale.h>
 
@@ -23,11 +28,7 @@ static void to_locale(strbuffer_t *strbuffer)
     const char *point;
     char *pos;
 
-    #ifdef ANDROID_NDK
-    point = "."; // Note: Changed in order to compile on Android
-    #else
     point = localeconv()->decimal_point;
-    #endif
     if(*point == '.') {
         /* No conversion needed */
         return;
@@ -43,11 +44,7 @@ static void from_locale(char *buffer)
     const char *point;
     char *pos;
 
-    #ifdef ANDROID_NDK
-    point = "."; // Note: Changed in order to compile on Android
-    #else
     point = localeconv()->decimal_point;
-    #endif
     if(*point == '.') {
         /* No conversion needed */
         return;

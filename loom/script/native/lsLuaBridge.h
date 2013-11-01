@@ -3849,6 +3849,11 @@ public:
             return Namespace(this);
         }
 
+		Namespace end()
+		{
+			return Namespace(this);
+		}
+
         //--------------------------------------------------------------------------
 
         /**
@@ -4502,9 +4507,14 @@ public:
     Namespace endPackage()
     {
         Namespace::currentPackageName = NULL;
-
         return endNamespace().endNamespace();
     }
+
+	Namespace end()
+	{
+		Namespace::currentPackageName = NULL;
+		return endNamespace().endNamespace();
+	}
 
     //----------------------------------------------------------------------------
 

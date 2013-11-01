@@ -18,7 +18,7 @@
  * ===========================================================================
  */
 
-#include "seatest.h"
+#include "loom/seatest.hpp"
 #include "loom/common/core/stringTable.h"
 
 SEATEST_FIXTURE(stringTable)

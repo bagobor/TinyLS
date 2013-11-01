@@ -19,7 +19,7 @@
  */
 
 #include <stdlib.h>
-#include "seatest.h"
+#include "loom/seatest.hpp"
 #include "loom/common/platform/platformThread.h"
 #include "loom/common/core/assert.h"
 

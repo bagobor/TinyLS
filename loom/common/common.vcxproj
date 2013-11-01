@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{609FB30D-4AC1-4193-B15F-DA8FD4B61E64}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>common</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../;$(ProjectDir)../../loom/vendor/seatest/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core\allocator.c" />
+    <ClCompile Include="core\allocatorJEMalloc.c" />
+    <ClCompile Include="core\allocatorTests.cpp" />
+    <ClCompile Include="core\assert.c" />
+    <ClCompile Include="core\jemalloc\jemalloc.c" />
+    <ClCompile Include="core\log.c" />
+    <ClCompile Include="core\logTests.cpp" />
+    <ClCompile Include="core\performance.cpp" />
+    <ClCompile Include="core\stringTable.c" />
+    <ClCompile Include="core\stringTableTests.cpp" />
+    <ClCompile Include="platform\platformError.cpp" />
+    <ClCompile Include="platform\platformFile.c" />
+    <ClCompile Include="platform\platformFileAndroid.cpp" />
+    <ClCompile Include="platform\platformIO.c" />
+    <ClCompile Include="platform\platformNetwork.c" />
+    <ClCompile Include="platform\platformNetworkTests.cpp" />
+    <ClCompile Include="platform\platformThread.c" />
+    <ClCompile Include="platform\platformThreadTests.cpp" />
+    <ClCompile Include="platform\platformTime.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\allocator.h" />
+    <ClInclude Include="core\allocatorJEMalloc.h" />
+    <ClInclude Include="core\assert.h" />
+    <ClInclude Include="core\jemalloc\jemalloc.h" />
+    <ClInclude Include="core\jemalloc\ql.h" />
+    <ClInclude Include="core\jemalloc\qr.h" />
+    <ClInclude Include="core\jemalloc\rb.h" />
+    <ClInclude Include="core\log.h" />
+    <ClInclude Include="core\performance.h" />
+    <ClInclude Include="core\stringTable.h" />
+    <ClInclude Include="platform\platform.h" />
+    <ClInclude Include="platform\platformFile.h" />
+    <ClInclude Include="platform\platformFileAndroid.h" />
+    <ClInclude Include="platform\platformFileIOS.h" />
+    <ClInclude Include="platform\platformIO.h" />
+    <ClInclude Include="platform\platformNetwork.h" />
+    <ClInclude Include="platform\platformThread.h" />
+    <ClInclude Include="platform\platformTime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="platform\platformFileIOS.m" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
