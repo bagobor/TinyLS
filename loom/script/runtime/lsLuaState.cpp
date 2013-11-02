@@ -21,6 +21,11 @@
 
 #include "zlib.h"
 
+#ifdef _WIN32
+#define snprintf _snprintf
+#define vsnprintf _vsnprintf
+#endif
+
 #include "loom/common/core/assert.h"
 #include "loom/common/utils/utByteArray.h"
 #include "loom/common/platform/platformIO.h"
@@ -68,7 +73,7 @@ void LSLuaState::open()
 {
     assert(!L);
 
-    L = lua_open();
+    L = luaL_newstate();
 
     toLuaState.insert(L, this);
 

@@ -18,6 +18,11 @@
  * ===========================================================================
  */
 
+
+#ifdef _MSC_VER
+#  define snprintf _snprintf
+#endif
+
 #include "loom/common/core/assert.h"
 #include "loom/common/core/log.h"
 #include "loom/common/platform/platformFile.h"

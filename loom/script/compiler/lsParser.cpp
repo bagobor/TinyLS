@@ -18,6 +18,10 @@
  * ===========================================================================
  */
 
+#ifdef _MSC_VER
+#  define snprintf _snprintf
+#endif
+
 #include "loom/script/compiler/lsToken.h"
 #include "loom/script/compiler/lsParser.h"
 #include "loom/script/compiler/lsCompilerLog.h"

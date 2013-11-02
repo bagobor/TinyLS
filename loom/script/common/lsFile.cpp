@@ -21,7 +21,7 @@
 #include "lsFile.h"
 #include "lsError.h"
 #include "loom/common/core/assert.h"
-#include "utils/utStreams.h"
+#include "loom/common/utils/utStreams.h"
 
 namespace LS {
 static MapFileFunction   MapFileFunc   = NULL;

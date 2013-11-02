@@ -18,6 +18,10 @@
  * ===========================================================================
  */
 
+#ifdef _MSC_VER
+#  define snprintf _snprintf
+#endif
+
 #include "loom/script/native/lsLuaBridge.h"
 #include "loom/script/reflection/lsType.h"
 #include "loom/script/runtime/lsRuntime.h"

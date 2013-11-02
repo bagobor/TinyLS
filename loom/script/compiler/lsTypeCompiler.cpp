@@ -18,6 +18,10 @@
  * ===========================================================================
  */
 
+#ifdef _MSC_VER
+#  define snprintf _snprintf
+#endif
+
 #ifndef LOOM_ENABLE_JIT
 
 // on msvc, necessry to include this before stdint.h which gets brought in through lua includes

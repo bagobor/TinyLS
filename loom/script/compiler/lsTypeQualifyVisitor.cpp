@@ -18,4 +18,8 @@
  * ===========================================================================
  */
 
+#ifdef _MSC_VER
+#  define snprintf _snprintf
+#endif
+
 #include "loom/script/compiler/lsTypeQualifyVisitor.h"

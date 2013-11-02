@@ -18,6 +18,10 @@
  * ===========================================================================
  */
 
+#ifdef _MSC_VER
+#  define snprintf _snprintf
+#endif
+
 #include "loom/script/loomscript.h"
 #include "loom/script/runtime/lsRuntime.h"
 
