@@ -19,3 +19,4 @@ artifacts/*
 /loom/vendor/zlib-1.2.8/contrib/vstudio/vc11/x86/ZlibStatDebug
 /loom/vendor/zlib-1.2.8/contrib/vstudio/vc11/x86/ZlibStatRelease
 /loom/vendor/zlib-1.2.8/contrib/vstudio/vc11/Debug
+/loom/vendor/lua-5.2.2/Debug

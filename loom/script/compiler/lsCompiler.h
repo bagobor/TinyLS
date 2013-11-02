@@ -135,7 +135,7 @@ public:
 
     static void defaultRootBuildFile()
     {
-        rootBuildFile = "";
+        rootBuildFile = "main.build";
     }
 
     static const utString& getRootBuildFile()

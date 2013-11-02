@@ -34,7 +34,7 @@ using namespace LS;
 
 void installPackageSystem();
 
-static utString   assemblyPath  = "./bin/Main.loom";
+static utString   assemblyPath  = "./bin/Benchmarks.loom";
 static LSLuaState *execState    = NULL;
 static Assembly   *execAssembly = NULL;
 

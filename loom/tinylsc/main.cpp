@@ -139,7 +139,7 @@ int main(int argc, const char **argv)
     bool runbenchmarks = false;
     bool symbols       = false;
 
-    const char *rootBuildFile = NULL;
+    const char *rootBuildFile = "Benchmarks";//NULL;
 
     for (int i = 1; i < argc; i++)
     {

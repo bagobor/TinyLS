@@ -122,8 +122,8 @@ Assembly *AssemblyReader::deserialize(LSLuaState *vm, const utString& sjson)
 
     // load references
     json_t *refArray = json_object_get(json, "references");
-
-    for (UTsize i = 0; i < json_array_size(refArray); i++)
+	const size_t references_size = json_array_size(refArray);
+    for (UTsize i = 0; i < references_size; i++)
     {
         Assembly *rasm = NULL;
 
