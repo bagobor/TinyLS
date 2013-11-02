@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\lsError.h" />
+    <ClInclude Include="common\lsFile.h" />
+    <ClInclude Include="common\lsLog.h" />
+    <ClInclude Include="common\lsSimpleGlob.h" />
+    <ClInclude Include="compiler\builders\lsAssemblyBuilder.h" />
+    <ClInclude Include="compiler\builders\lsModuleBuilder.h" />
+    <ClInclude Include="compiler\builders\lsTypeBuilder.h" />
+    <ClInclude Include="compiler\lsAlias.h" />
+    <ClInclude Include="compiler\lsAST.h" />
+    <ClInclude Include="compiler\lsBC.h" />
+    <ClInclude Include="compiler\lsBuildInfo.h" />
+    <ClInclude Include="compiler\lsCompiler.h" />
+    <ClInclude Include="compiler\lsCompilerLog.h" />
+    <ClInclude Include="compiler\lsDeclarationVisitor.h" />
+    <ClInclude Include="compiler\lsJitBC.h" />
+    <ClInclude Include="compiler\lsJitTypeCompiler.h" />
+    <ClInclude Include="compiler\lsLexer.h" />
+    <ClInclude Include="compiler\lsMemberVisitor.h" />
+    <ClInclude Include="compiler\lsParser.h" />
+    <ClInclude Include="compiler\lsScope.h" />
+    <ClInclude Include="compiler\lsToken.h" />
+    <ClInclude Include="compiler\lsTraversalVisitor.h" />
+    <ClInclude Include="compiler\lsTypeCompiler.h" />
+    <ClInclude Include="compiler\lsTypeCompilerBase.h" />
+    <ClInclude Include="compiler\lsTypeQualifyVisitor.h" />
+    <ClInclude Include="compiler\lsTypeValidator.h" />
+    <ClInclude Include="compiler\lsTypeVisitor.h" />
+    <ClInclude Include="compiler\lsVisitor.h" />
+    <ClInclude Include="loomscript.h" />
+    <ClInclude Include="native\core\system\lmConsole.h" />
+    <ClInclude Include="native\core\system\lmPackageSystem.h" />
+    <ClInclude Include="native\core\system\Socket\auxiliar.h" />
+    <ClInclude Include="native\core\system\Socket\buffer.h" />
+    <ClInclude Include="native\core\system\Socket\except.h" />
+    <ClInclude Include="native\core\system\Socket\inet.h" />
+    <ClInclude Include="native\core\system\Socket\io.h" />
+    <ClInclude Include="native\core\system\Socket\luasocket.h" />
+    <ClInclude Include="native\core\system\Socket\mime.h" />
+    <ClInclude Include="native\core\system\Socket\options.h" />
+    <ClInclude Include="native\core\system\Socket\select.h" />
+    <ClInclude Include="native\core\system\Socket\socket.h" />
+    <ClInclude Include="native\core\system\Socket\tcp.h" />
+    <ClInclude Include="native\core\system\Socket\timeout.h" />
+    <ClInclude Include="native\core\system\Socket\udp.h" />
+    <ClInclude Include="native\core\system\Socket\unix.h" />
+    <ClInclude Include="native\core\system\Socket\usocket.h" />
+    <ClInclude Include="native\core\system\Socket\wsocket.h" />
+    <ClInclude Include="native\lsLuaBridge.h" />
+    <ClInclude Include="native\lsLuaBridgeFuncTraits.h" />
+    <ClInclude Include="native\lsNative.h" />
+    <ClInclude Include="native\lsNativeDelegate.h" />
+    <ClInclude Include="native\lsNativeInterface.h" />
+    <ClInclude Include="reflection\lsAssembly.h" />
+    <ClInclude Include="reflection\lsByteCode.h" />
+    <ClInclude Include="reflection\lsFieldInfo.h" />
+    <ClInclude Include="reflection\lsJitByteCode.h" />
+    <ClInclude Include="reflection\lsMemberInfo.h" />
+    <ClInclude Include="reflection\lsMethodInfo.h" />
+    <ClInclude Include="reflection\lsModule.h" />
+    <ClInclude Include="reflection\lsPropertyInfo.h" />
+    <ClInclude Include="reflection\lsReflection.h" />
+    <ClInclude Include="reflection\lsType.h" />
+    <ClInclude Include="runtime\lsLua.h" />
+    <ClInclude Include="runtime\lsLuaState.h" />
+    <ClInclude Include="runtime\lsProfiler.h" />
+    <ClInclude Include="runtime\lsRuntime.h" />
+    <ClInclude Include="runtime\lsTypeValidatorRT.h" />
+    <ClInclude Include="serialize\lsAssemblyReader.h" />
+    <ClInclude Include="serialize\lsAssemblyWriter.h" />
+    <ClInclude Include="serialize\lsBinReader.h" />
+    <ClInclude Include="serialize\lsBinWriter.h" />
+    <ClInclude Include="serialize\lsFieldInfoReader.h" />
+    <ClInclude Include="serialize\lsFieldInfoWriter.h" />
+    <ClInclude Include="serialize\lsMemberInfoReader.h" />
+    <ClInclude Include="serialize\lsMemberInfoWriter.h" />
+    <ClInclude Include="serialize\lsMethodReader.h" />
+    <ClInclude Include="serialize\lsMethodWriter.h" />
+    <ClInclude Include="serialize\lsModuleReader.h" />
+    <ClInclude Include="serialize\lsModuleWriter.h" />
+    <ClInclude Include="serialize\lsPropertyInfoReader.h" />
+    <ClInclude Include="serialize\lsPropertyInfoWriter.h" />
+    <ClInclude Include="serialize\lsTypeReader.h" />
+    <ClInclude Include="serialize\lsTypeWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\lsError.cpp" />
+    <ClCompile Include="common\lsFile.cpp" />
+    <ClCompile Include="common\lsLog.cpp" />
+    <ClCompile Include="compiler\builders\lsAssemblyBuilder.cpp" />
+    <ClCompile Include="compiler\builders\lsModuleBuilder.cpp" />
+    <ClCompile Include="compiler\builders\lsTypeBuilder.cpp" />
+    <ClCompile Include="compiler\lsAlias.cpp" />
+    <ClCompile Include="compiler\lsBC.cpp" />
+    <ClCompile Include="compiler\lsBuildInfo.cpp" />
+    <ClCompile Include="compiler\lsCompiler.cpp" />
+    <ClCompile Include="compiler\lsCompilerLog.cpp" />
+    <ClCompile Include="compiler\lsJitBC.cpp" />
+    <ClCompile Include="compiler\lsJitTypeCompiler.cpp" />
+    <ClCompile Include="compiler\lsLexer.cpp" />
+    <ClCompile Include="compiler\lsParser.cpp" />
+    <ClCompile Include="compiler\lsScope.cpp" />
+    <ClCompile Include="compiler\lsToken.cpp" />
+    <ClCompile Include="compiler\lsTraversalVisitor.cpp" />
+    <ClCompile Include="compiler\lsTypeCompiler.cpp" />
+    <ClCompile Include="compiler\lsTypeCompilerBase.cpp" />
+    <ClCompile Include="compiler\lsTypeQualifyVisitor.cpp" />
+    <ClCompile Include="native\core\compiler\lmLSCompiler.cpp" />
+    <ClCompile Include="native\core\compiler\lmPackageCompiler.cpp" />
+    <ClCompile Include="native\core\system\Debugger\lmObjectInspector.cpp" />
+    <ClCompile Include="native\core\system\lmBaseDelegate.cpp" />
+    <ClCompile Include="native\core\system\lmBootstrap.cpp" />
+    <ClCompile Include="native\core\system\lmByteArray.cpp" />
+    <ClCompile Include="native\core\system\lmCommandLine.cpp" />
+    <ClCompile Include="native\core\system\lmConsole.cpp" />
+    <ClCompile Include="native\core\system\lmCoroutine.cpp" />
+    <ClCompile Include="native\core\system\lmDebug.cpp" />
+    <ClCompile Include="native\core\system\lmDictionary.cpp" />
+    <ClCompile Include="native\core\system\lmFunction.cpp" />
+    <ClCompile Include="native\core\system\lmGC.cpp" />
+    <ClCompile Include="native\core\system\lmIO.cpp" />
+    <ClCompile Include="native\core\system\lmJSON.cpp" />
+    <ClCompile Include="native\core\system\lmMath.cpp" />
+    <ClCompile Include="native\core\system\lmNativeDelegate.cpp" />
+    <ClCompile Include="native\core\system\lmNumber.cpp" />
+    <ClCompile Include="native\core\system\lmObject.cpp" />
+    <ClCompile Include="native\core\system\lmPackageSystem.cpp" />
+    <ClCompile Include="native\core\system\lmProcess.cpp" />
+    <ClCompile Include="native\core\system\lmProfiler.cpp" />
+    <ClCompile Include="native\core\system\lmString.cpp" />
+    <ClCompile Include="native\core\system\lmVector.cpp" />
+    <ClCompile Include="native\core\system\lmVM.cpp" />
+    <ClCompile Include="native\core\system\Metrics\lmMetrics.cpp" />
+    <ClCompile Include="native\core\system\Platform\lmFile.cpp" />
+    <ClCompile Include="native\core\system\Platform\lmPlatform.cpp" />
+    <ClCompile Include="native\core\system\Reflection\lmAssembly.cpp" />
+    <ClCompile Include="native\core\system\Reflection\lmType.cpp" />
+    <ClCompile Include="native\core\system\Socket\auxiliar.c" />
+    <ClCompile Include="native\core\system\Socket\buffer.c" />
+    <ClCompile Include="native\core\system\Socket\except.c" />
+    <ClCompile Include="native\core\system\Socket\inet.c" />
+    <ClCompile Include="native\core\system\Socket\io.c" />
+    <ClCompile Include="native\core\system\Socket\lmSocket.cpp" />
+    <ClCompile Include="native\core\system\Socket\luasocket.c" />
+    <ClCompile Include="native\core\system\Socket\mime.c" />
+    <ClCompile Include="native\core\system\Socket\options.c" />
+    <ClCompile Include="native\core\system\Socket\select.c" />
+    <ClCompile Include="native\core\system\Socket\tcp.c" />
+    <ClCompile Include="native\core\system\Socket\timeout.c" />
+    <ClCompile Include="native\core\system\Socket\udp.c" />
+    <ClCompile Include="native\core\system\Socket\unix.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\usocket.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\wsocket.c" />
+    <ClCompile Include="native\core\system\Utils\lmSystemUtilsPackage.cpp" />
+    <ClCompile Include="native\core\system\XML\lmXMLNode.cpp" />
+    <ClCompile Include="native\core\test\lmBenchmarkNativeClass.cpp" />
+    <ClCompile Include="native\core\test\lmPackageBenchmark.cpp" />
+    <ClCompile Include="native\core\test\lmPackageTest.cpp" />
+    <ClCompile Include="native\core\test\lmTestDelegate.cpp" />
+    <ClCompile Include="native\core\test\lmTestManagedNative.cpp" />
+    <ClCompile Include="native\core\test\lmTestNativeClass.cpp" />
+    <ClCompile Include="native\lsLuaBridge.cpp" />
+    <ClCompile Include="native\lsNativeDelegate.cpp" />
+    <ClCompile Include="native\lsNativeInterface.cpp" />
+    <ClCompile Include="reflection\lsAssembly.cpp" />
+    <ClCompile Include="reflection\lsByteCode.cpp" />
+    <ClCompile Include="reflection\lsFieldInfo.cpp" />
+    <ClCompile Include="reflection\lsJitByteCode.cpp" />
+    <ClCompile Include="reflection\lsMethodInfo.cpp" />
+    <ClCompile Include="reflection\lsModule.cpp" />
+    <ClCompile Include="reflection\lsPropertyInfo.cpp" />
+    <ClCompile Include="reflection\lsType.cpp" />
+    <ClCompile Include="runtime\lsClassRT.cpp" />
+    <ClCompile Include="runtime\lsInstanceRT.cpp" />
+    <ClCompile Include="runtime\lsLuaState.cpp" />
+    <ClCompile Include="runtime\lsProfiler.cpp" />
+    <ClCompile Include="runtime\lsRuntime.cpp" />
+    <ClCompile Include="runtime\lsTypeValidatorRT.cpp" />
+    <ClCompile Include="serialize\lsAssemblyReader.cpp" />
+    <ClCompile Include="serialize\lsAssemblyWriter.cpp" />
+    <ClCompile Include="serialize\lsBinReader.cpp" />
+    <ClCompile Include="serialize\lsBinWriter.cpp" />
+    <ClCompile Include="serialize\lsFieldInfoReader.cpp" />
+    <ClCompile Include="serialize\lsFieldInfoWriter.cpp" />
+    <ClCompile Include="serialize\lsMemberInfoReader.cpp" />
+    <ClCompile Include="serialize\lsMemberInfoWriter.cpp" />
+    <ClCompile Include="serialize\lsMethodReader.cpp" />
+    <ClCompile Include="serialize\lsMethodWriter.cpp" />
+    <ClCompile Include="serialize\lsModuleReader.cpp" />
+    <ClCompile Include="serialize\lsModuleWriter.cpp" />
+    <ClCompile Include="serialize\lsPropertyInfoReader.cpp" />
+    <ClCompile Include="serialize\lsPropertyInfoWriter.cpp" />
+    <ClCompile Include="serialize\lsTypeReader.cpp" />
+    <ClCompile Include="serialize\lsTypeWriter.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{44BDF033-C598-4F83-9B17-34A76CDE6E86}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>script</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../;$(ProjectDir)../../loom/vendor/seatest/src;$(ProjectDir)../../loom/vendor/jansson/src;$(ProjectDir)../../loom/vendor/lua-5.2.2/src;$(ProjectDir)../../loom/vendor/zlib-1.2.8</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

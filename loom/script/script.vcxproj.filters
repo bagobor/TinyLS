@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="loomscript.h" />
+    <ClInclude Include="serialize\lsBinReader.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsBinWriter.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsFieldInfoReader.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsFieldInfoWriter.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsMemberInfoReader.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsMemberInfoWriter.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsMethodReader.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsMethodWriter.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsModuleReader.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsModuleWriter.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsPropertyInfoReader.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsPropertyInfoWriter.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsTypeReader.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsTypeWriter.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsAssemblyReader.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize\lsAssemblyWriter.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\lsLua.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\lsLuaState.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\lsProfiler.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\lsRuntime.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="runtime\lsTypeValidatorRT.h">
+      <Filter>runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsAssembly.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsByteCode.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsFieldInfo.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsJitByteCode.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsMemberInfo.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsMethodInfo.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsModule.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsPropertyInfo.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsReflection.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection\lsType.h">
+      <Filter>reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lsError.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lsFile.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lsLog.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lsSimpleGlob.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsAlias.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsAST.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsBC.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsBuildInfo.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsCompiler.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsCompilerLog.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsDeclarationVisitor.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsJitBC.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsJitTypeCompiler.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsLexer.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsMemberVisitor.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsParser.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsScope.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsToken.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsTraversalVisitor.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsTypeCompiler.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsTypeCompilerBase.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsTypeQualifyVisitor.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsTypeValidator.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsTypeVisitor.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\lsVisitor.h">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\builders\lsAssemblyBuilder.h">
+      <Filter>compiler\biulders</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\builders\lsModuleBuilder.h">
+      <Filter>compiler\biulders</Filter>
+    </ClInclude>
+    <ClInclude Include="compiler\builders\lsTypeBuilder.h">
+      <Filter>compiler\biulders</Filter>
+    </ClInclude>
+    <ClInclude Include="native\lsLuaBridge.h">
+      <Filter>native</Filter>
+    </ClInclude>
+    <ClInclude Include="native\lsLuaBridgeFuncTraits.h">
+      <Filter>native</Filter>
+    </ClInclude>
+    <ClInclude Include="native\lsNative.h">
+      <Filter>native</Filter>
+    </ClInclude>
+    <ClInclude Include="native\lsNativeDelegate.h">
+      <Filter>native</Filter>
+    </ClInclude>
+    <ClInclude Include="native\lsNativeInterface.h">
+      <Filter>native</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\lmConsole.h">
+      <Filter>native\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\lmPackageSystem.h">
+      <Filter>native\core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\auxiliar.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\buffer.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\except.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\inet.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\io.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\luasocket.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\mime.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\options.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\select.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\socket.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\tcp.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\timeout.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\udp.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\unix.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\usocket.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="native\core\system\Socket\wsocket.h">
+      <Filter>native\core\Socket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="serialize">
+      <UniqueIdentifier>{a7de9f45-7b92-4387-b8ff-71aa827f271c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runtime">
+      <UniqueIdentifier>{24d92dd4-ee0a-4d96-bb24-a5456352a87f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="reflection">
+      <UniqueIdentifier>{32a81b99-d659-4f06-868f-cc49bd6592b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{61e7d1f8-3b18-4ca7-af76-55a0937918d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compiler">
+      <UniqueIdentifier>{fa0b672d-0d94-49f2-a467-1561227ab4db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compiler\biulders">
+      <UniqueIdentifier>{bea156aa-7bcc-43d7-934b-606efdafd04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native">
+      <UniqueIdentifier>{b6b4163a-d130-442d-9ab4-ffa2995bc6dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core">
+      <UniqueIdentifier>{471f4183-a6e9-4462-8668-1da535dff32e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\test">
+      <UniqueIdentifier>{02c6aa4d-86da-4e63-b341-17cc7145fca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\system">
+      <UniqueIdentifier>{7da271a0-ab15-4eef-93bd-5a5ee9ba9c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\compiler">
+      <UniqueIdentifier>{4284ff97-b0b4-46b9-82fa-f83667fb10a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\system\Debugger">
+      <UniqueIdentifier>{5901f032-5cdf-40f0-b7a4-7ba2c68c6ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\system\Metrics">
+      <UniqueIdentifier>{d9ae6c8b-0fcb-4496-aa58-c23cd2d8cb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\system\Platform">
+      <UniqueIdentifier>{51ed9bff-db2e-4065-941d-fc43ddaef9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\Reflection">
+      <UniqueIdentifier>{858828ac-05c1-47c8-9da2-3d458647878c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\Socket">
+      <UniqueIdentifier>{92c634ad-e6bc-4b7f-9c3c-d706fdb856ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\Utils">
+      <UniqueIdentifier>{7a63d197-f983-4ba2-b5a5-6130cfb0f2a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="native\core\XML">
+      <UniqueIdentifier>{13d13331-0a8c-4ba9-b820-f9ab14a4de95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="serialize\lsBinReader.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsBinWriter.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsFieldInfoReader.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsFieldInfoWriter.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsMemberInfoReader.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsMemberInfoWriter.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsMethodReader.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsMethodWriter.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsModuleReader.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsModuleWriter.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsPropertyInfoReader.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsPropertyInfoWriter.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsTypeReader.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsTypeWriter.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsAssemblyReader.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize\lsAssemblyWriter.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\lsClassRT.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\lsInstanceRT.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\lsLuaState.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\lsProfiler.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\lsRuntime.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="runtime\lsTypeValidatorRT.cpp">
+      <Filter>runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection\lsAssembly.cpp">
+      <Filter>reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection\lsByteCode.cpp">
+      <Filter>reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection\lsFieldInfo.cpp">
+      <Filter>reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection\lsJitByteCode.cpp">
+      <Filter>reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection\lsMethodInfo.cpp">
+      <Filter>reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection\lsModule.cpp">
+      <Filter>reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection\lsPropertyInfo.cpp">
+      <Filter>reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection\lsType.cpp">
+      <Filter>reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lsError.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lsFile.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lsLog.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsAlias.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsBC.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsBuildInfo.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsCompiler.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsCompilerLog.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsJitBC.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsJitTypeCompiler.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsLexer.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsParser.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsScope.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsToken.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsTraversalVisitor.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsTypeCompiler.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsTypeCompilerBase.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\lsTypeQualifyVisitor.cpp">
+      <Filter>compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\builders\lsAssemblyBuilder.cpp">
+      <Filter>compiler\biulders</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\builders\lsModuleBuilder.cpp">
+      <Filter>compiler\biulders</Filter>
+    </ClCompile>
+    <ClCompile Include="compiler\builders\lsTypeBuilder.cpp">
+      <Filter>compiler\biulders</Filter>
+    </ClCompile>
+    <ClCompile Include="native\lsLuaBridge.cpp">
+      <Filter>native</Filter>
+    </ClCompile>
+    <ClCompile Include="native\lsNativeDelegate.cpp">
+      <Filter>native</Filter>
+    </ClCompile>
+    <ClCompile Include="native\lsNativeInterface.cpp">
+      <Filter>native</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\test\lmBenchmarkNativeClass.cpp">
+      <Filter>native\core\test</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\test\lmPackageBenchmark.cpp">
+      <Filter>native\core\test</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\test\lmPackageTest.cpp">
+      <Filter>native\core\test</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\test\lmTestDelegate.cpp">
+      <Filter>native\core\test</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\test\lmTestManagedNative.cpp">
+      <Filter>native\core\test</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\test\lmTestNativeClass.cpp">
+      <Filter>native\core\test</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmBaseDelegate.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmBootstrap.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmByteArray.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmCommandLine.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmConsole.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmCoroutine.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmDebug.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmDictionary.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmFunction.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmGC.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmIO.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmJSON.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmMath.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmNativeDelegate.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmNumber.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmObject.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmPackageSystem.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmProcess.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmProfiler.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmString.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmVector.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\lmVM.cpp">
+      <Filter>native\core\system</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\compiler\lmLSCompiler.cpp">
+      <Filter>native\core\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\compiler\lmPackageCompiler.cpp">
+      <Filter>native\core\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Debugger\lmObjectInspector.cpp">
+      <Filter>native\core\system\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Metrics\lmMetrics.cpp">
+      <Filter>native\core\system\Metrics</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Platform\lmFile.cpp">
+      <Filter>native\core\system\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Platform\lmPlatform.cpp">
+      <Filter>native\core\system\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Reflection\lmAssembly.cpp">
+      <Filter>native\core\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Reflection\lmType.cpp">
+      <Filter>native\core\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\auxiliar.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\buffer.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\except.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\inet.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\io.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\lmSocket.cpp">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\luasocket.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\mime.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\options.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\select.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\tcp.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\timeout.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\udp.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\unix.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\usocket.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Socket\wsocket.c">
+      <Filter>native\core\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\Utils\lmSystemUtilsPackage.cpp">
+      <Filter>native\core\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="native\core\system\XML\lmXMLNode.cpp">
+      <Filter>native\core\XML</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
