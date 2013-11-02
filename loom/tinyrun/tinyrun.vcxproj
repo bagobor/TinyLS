@@ -59,6 +59,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies> winmm.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -81,6 +82,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.vcxproj">
+      <Project>{609fb30d-4ac1-4193-b15f-da8fd4b61e64}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\script\script.vcxproj">
+      <Project>{44bdf033-c598-4f83-9b17-34a76cde6e86}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\jansson\win32\vs2011\jansson.vcxproj">
+      <Project>{76226d20-1972-4789-a595-edacc7a76dc3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\lua-5.2.2\lua.vcxproj">
+      <Project>{65e461ca-13bb-4704-b553-b6d77df0f50d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\seatest\src\seatest.vcxproj">
+      <Project>{6bb86f8a-7eb7-4443-981b-5b86e4509684}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\zlib-1.2.8\contrib\vstudio\vc11\zlibstat.vcxproj">
+      <Project>{745dec58-ebb3-47a9-a9b8-4c6627c01bf8}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

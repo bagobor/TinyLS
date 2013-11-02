@@ -1,6 +1,0 @@
-﻿cl : Command line warning D9030: '/Gm' is incompatible with multiprocessing; ignoring /MP switch
-  print.c
-  lobject.c
-  llex.c
-  Generating Code...
-  lua.vcxproj -> E:\bitbucket\TinyLS\Debug\lua.lib
